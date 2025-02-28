@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: hsl(0, 0%, 10%);
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 300px;
+  border: solid hsl(0, 0%, 50%) 0.1px;
+  background-color: hsl(0, 0%, 10%);
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 15px;
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.dot {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: rgb(0, 89, 255);
+  margin-left: -6px;
+}
+
+.main {
+  margin-bottom: 40px;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+}
+
+.title {
+  font-weight: 1000;
+  color: hsl(0, 0%, 100%);
+  margin-left: 80px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.create-account {
+  display: block;
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+  border-radius: 20px;
+  border: solid hsl(0, 0%, 50%) 0.1px;
+  width: 320px;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.signin {
+  background-color: white;
+  color: black;
+  border: none;
+  width: 320px;
+  border-radius: 20px;
+  height: 45px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.signin:hover {
+  background-color: rgb(190, 190, 190);
+  transform: scale(1.1);
+}
+
+.signin:active {
+  opacity: 0.7;
+}
+
+::placeholder {
+  font-size: 17px;
+}
+
+.create-account:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transform: scale(1.1);
+}
+
+.create-account:active {
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+}
+
+.signout {
+  background-color: white;
+  color: black;
+  border: none;
+  width: 320px;
+  border-radius: 20px;
+  height: 45px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+
+  animation-delay: 0.8s;
+  margin-left: 100px;
+}
+
+.signout:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.signout:active {
+  opacity: 0.7;
+}
+
+.title-main {
+  font-weight: 100;
+  color: hsl(0, 0%, 100%);
+  margin-left: 90px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.name {
+  font-weight: 1000;
+}
