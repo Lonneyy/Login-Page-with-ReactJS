@@ -130,8 +130,6 @@ input {
   transition: 0.3s ease;
   opacity: 0;
   animation: fadeSlideIn 0.8s ease-out forwards;
-
-  animation-delay: 0.8s;
   margin-left: 100px;
 }
 
@@ -156,4 +154,24 @@ input {
 
 .name {
   font-weight: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .title-main {
+    margin-left: 45px;
+  }
+
+  .signout {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-main {
+    margin-left: 20px;
+  }
+
+  .signout {
+    margin-left: 20px;
+  }
 }
